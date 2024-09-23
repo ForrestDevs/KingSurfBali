@@ -1,231 +1,129 @@
 import React from "react";
 import Image from "next/image";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+
+const lessons = [
+  {
+    title: "GROUP INTERMEDIATE LESSON",
+    image:
+      "https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dc6/106/64fdc6106e37b471200752.jpg",
+    description:
+      "Class included, equipment surfing, experience instructor, locker, 2 hours surfing. Discount available for multiple lessons.",
+    price: "IDR 400.000/Person",
+  },
+  {
+    title: "PRIVATE BEGINNER CLASS",
+    image:
+      "https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dc6/2ed/64fdc62ed5ff2841388140.jpg",
+    description:
+      "Enjoy a private surfing experience at an affordable price! Private surfing only 300K per session. Include mineral water, locker, and sun block",
+    price: "IDR 300.000/Person",
+  },
+  {
+    title: "SEMI PRIVATE",
+    image:
+      "https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dca/902/64fdca9024912250346219.jpg",
+    description:
+      "Equipment surf, experienced private 1 instructor for 2 students, 2 hours surf lessons, free mineral water, zinc, locker, suncream locker and feedback after surf. Discount available ...",
+    price: "IDR 250.000/Person",
+  },
+  {
+    title: "KIDS SURFING LESSONS",
+    image:
+      "https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dca/a94/64fdcaa945e13380682806.jpg",
+    description:
+      "Equipment surfing, experienced instructor, locker, 2 hours surfing lessons. Discount available for multiple lessons.",
+    price: "IDR 350.000/Person",
+  },
+];
 
 export default function LessonsSection() {
   return (
-    <div>
-      <section className="mt-20 px-8 container mx-auto">
-        <div className="lg:flex lg:justify-between gap-[2rem]">
-          <div className="lg:mr-4 mt-5">
-            <div className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="mr-4"
-                width="63"
-                height="3"
-                viewBox="0 0 63 3"
-                fill="none"
-              >
-                <path
-                  d="M2 1.5H61"
-                  stroke="#50CEDF"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                ></path>
-              </svg>
-              <h2 className="font-bold text-[24px] poppins">
-                OUR <span className="text-[#50CEDF]">LESSON</span>
-              </h2>
-            </div>
-            <p className="text-[14px] font-medium w-full lg:w-[250px] tracking-tight text-[#222] dark:text-white text-justify">
-              Our experienced surf instructors are here to guide you in
-              embracing the waves from the very beginning. When you choose to
-              surf with us in Bali, you&apos;ll not only ensure your safety but
-              also immerse yourself in a welcoming, enjoyable, and sociable
-              environment.
-            </p>
+    <section className="py-24 sm:py-32 mx-auto container">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 mb-12">
+        <div className="lg:max-w-md">
+          <div className="flex items-center mb-4">
+            <div className="w-16 h-0.5 bg-primary mr-4"></div>
+            <h2 className="text-2xl font-bold">
+              OUR <span className="text-primary">LESSON</span>
+            </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-              <a href="#">
-                <Image
-                  className="rounded-t-lg w-full object-cover h-[16rem] md:h-[10rem]"
-                  src="https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dc6/106/64fdc6106e37b471200752.jpg"
-                  alt=""
-                  width={100}
-                  height={100}
-                />
-              </a>
-              <div className="px-5 pb-5">
-                <div className="pt-3 h-[4rem]">
-                  <a href="#">
-                    <p className="mb-1 text-[15px] font-extrabold text-center mx-auto tracking-tight text-[#222] capitalize">
-                      GROUP INTERMEDIATE LESSON
-                    </p>
-                  </a>
-                </div>
-                <hr />
-                <div className="h-[7rem]">
-                  <p className="mb-1 mt-1 text-center mx-auto text-[10px] font-medium text-gray-700">
-                    className included, equipment surfing, experience
-                    instructor, looker, 2 hours surfing. Discount available for
-                    multiple lessons.
-                  </p>
-                </div>
-                <div
-                  className="inline-flex rounded-md shadow-sm mt-2 mx-auto"
-                  role="group"
-                >
-                  <a
-                    type="button"
-                    className="inline-flex text-center items-center px-2 py-1  text-[9px] font-medium text-gray-900 bg-[#222222] rounded-l-lg"
-                  >
-                    Start From <br />
-                    IDR 400.000/Person
-                  </a>
-                  <a
-                    href="https://wa.me/6282177772644"
-                    className="inline-flex items-center px-2 py-1  text-[9px] font-bold text-gray-900 bg-[#50CEDF] rounded-r-lg"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-              <a href="#">
-                <Image
-                  className="rounded-t-lg w-full object-cover h-[16rem] md:h-[10rem]"
-                  src="https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dc6/2ed/64fdc62ed5ff2841388140.jpg"
-                  alt=""
-                  width={100}
-                  height={100}
-                />
-              </a>
-              <div className="px-5 pb-5">
-                <div className="pt-3 h-[4rem]">
-                  <a href="#">
-                    <p className="mb-1 text-[15px] font-extrabold text-center mx-auto tracking-tight text-[#222] capitalize">
-                      PRIVATE BEGINNER className
-                    </p>
-                  </a>
-                </div>
-                <hr />
-                <div className="h-[7rem]">
-                  <p className="mb-1 mt-1 text-center mx-auto text-[10px] font-medium text-gray-700">
-                    Enjoy a private surfing experience at an affordable price!
-                    Private surfing only 300K per session.Include mineral water,
-                    locker,and sun block
-                  </p>
-                </div>
-                <div
-                  className="inline-flex rounded-md shadow-sm mt-2 mx-auto"
-                  role="group"
-                >
-                  <a
-                    type="button"
-                    className="inline-flex text-center items-center px-2 py-1  text-[9px] font-medium text-gray-900 bg-[#222222] rounded-l-lg"
-                  >
-                    Start From <b />
-                    IDR 300.000/Person
-                  </a>
-                  <a
-                    href="https://wa.me/6282177772644"
-                    className="inline-flex items-center px-2 py-1  text-[9px] font-bold text-gray-900 bg-[#50CEDF] rounded-r-lg"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-              <a href="#">
-                <Image
-                  className="rounded-t-lg w-full object-cover h-[16rem] md:h-[10rem]"
-                  src="https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dca/902/64fdca9024912250346219.jpg"
-                  alt=""
-                  width={100}
-                  height={100}
-                />
-              </a>
-              <div className="px-5 pb-5">
-                <div className="pt-3 h-[4rem]">
-                  <a href="#">
-                    <p className="mb-1 text-[15px] font-extrabold text-center mx-auto tracking-tight text-[#222] capitalize">
-                      SEMI PRIVATE
-                    </p>
-                  </a>
-                </div>
-                <hr />
-                <div className="h-[7rem]">
-                  <p className="mb-1 mt-1 text-center mx-auto text-[10px] font-medium text-gray-700 ">
-                    equipment surf, experienced private 1 instructor for 2
-                    student, 2 hours surf lessons, free mineral water, zinc,
-                    locker, suncream locker and feedback after surf. Discount
-                    available ...
-                  </p>
-                </div>
-                <div
-                  className="inline-flex rounded-md shadow-sm mt-2 mx-auto"
-                  role="group"
-                >
-                  <a
-                    type="button"
-                    className="inline-flex text-center items-center px-2 py-1  text-[9px] font-medium text-gray-900 bg-[#222222] rounded-l-lg"
-                  >
-                    Start From <br />
-                    IDR 250.000/Person
-                  </a>
-                  <a
-                    href="https://wa.me/6282177772644"
-                    className="inline-flex items-center px-2 py-1  text-[9px] font-bold text-gray-900 bg-[#50CEDF] rounded-r-lg"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-              <a href="#">
-                <Image
-                  className="rounded-t-lg w-full object-cover h-[16rem] md:h-[10rem]"
-                  src="https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dca/a94/64fdcaa945e13380682806.jpg"
-                  alt=""
-                  width={100}
-                  height={100}
-                />
-              </a>
-              <div className="px-5 pb-5">
-                <div className="pt-3 h-[4rem]">
-                  <a href="#">
-                    <p className="mb-1 text-[15px] font-extrabold text-center mx-auto tracking-tight text-[#222] capitalize">
-                      KIDS SURFING LESSONS
-                    </p>
-                  </a>
-                </div>
-                <hr />
-                <div className="h-[7rem]">
-                  <p className="mb-1 mt-1 text-center mx-auto text-[10px] font-medium text-gray-700">
-                    equipment surfing, experienced instructor, looker, 2 hours
-                    surfing lessons. Discount available for multiple lessons.
-                  </p>
-                </div>
-                <div
-                  className="inline-flex rounded-md shadow-sm mt-2 mx-auto"
-                  role="group"
-                >
-                  <a
-                    type="button"
-                    className="inline-flex text-center items-center px-2 py-1 text-[9px] font-medium text-gray-900 bg-[#222222] rounded-l-lg"
-                  >
-                    Start From <br />
-                    IDR 350.000/Person
-                  </a>
-                  <a
-                    href="https://wa.me/6282177772644"
-                    className="inline-flex items-center px-2 py-1 text-[9px] font-bold text-gray-900 bg-[#50CEDF] rounded-r-lg"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p className="text-md text-black">
+            At King Surf Bali, we believe surfing is for everyone. Our expert
+            instructors offer personalized lessons that cater to all levels.
+            Whether it&apos;s your first time paddling out or youre refining
+            your technique, we&apos;ve got you covered. Ready to master the art
+            of surfing? Join the King Surf Tribe and ride with the best!
+          </p>
         </div>
-      </section>
-    </div>
+        <div className="lg:max-w-md">
+          <ul className="list-none space-y-2">
+            <li className="flex flex-row items-start">
+              <ArrowRight className="text-primary mr-2 flex-shrink-0 mt-1" size={24} />
+              <span className="flex-grow">
+                Beginner Lessons: Learn the basics, from paddling to catching
+                your first wave.
+              </span>
+            </li>
+            <li className="flex flex-row items-start">
+              <ArrowRight className="text-primary mr-2 flex-shrink-0 mt-1" size={24} />
+              <span className="flex-grow">
+                Intermediate Sessions: Hone your skills, improve your balance,
+                and ride bigger waves with confidence.
+              </span>
+            </li>
+            <li className="flex flex-row items-start">
+              <ArrowRight className="text-primary mr-2 flex-shrink-0 mt-1" size={24} />
+              <span className="flex-grow">
+                Advanced Coaching: Fine-tune your maneuvers and take on
+                Bali&apos;s legendary surf spots.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {lessons.map((lesson, index) => (
+          <Card key={index} className="flex flex-col">
+            <CardHeader className="p-0">
+              <Image
+                className="w-full h-48 object-cover rounded-t-lg"
+                src={lesson.image}
+                alt={lesson.title}
+                width={400}
+                height={200}
+              />
+            </CardHeader>
+            <CardContent className="flex-grow p-4">
+              <CardTitle className="text-lg font-bold text-center mb-2">
+                {lesson.title}
+              </CardTitle>
+              <p className="text-sm text-center text-muted-foreground">
+                {lesson.description}
+              </p>
+            </CardContent>
+            <CardFooter className="p-4 flex justify-center items-center">
+              {/* <p className="text-sm font-semibold">{lesson.price}</p> */}
+              <Button
+                variant="outline"
+                className="mr-2 font-bold group/arrow text-black"
+              >
+                Book Now
+                <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
+              </Button>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    </section>
   );
 }

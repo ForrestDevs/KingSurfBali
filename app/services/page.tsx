@@ -1,4 +1,6 @@
 import { CallToActionTwo } from "@/components/layout/sections/cta";
+import LessonsSection from "@/components/layout/sections/lessons";
+import RentalSection from "@/components/layout/sections/rental";
 import React from "react";
 
 export default function Contact() {
@@ -115,6 +117,8 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <LessonsSection />
+      <RentalSection />
       <CallToActionTwo />
     </div>
   );

@@ -14,8 +14,8 @@ export default function VisitSection() {
               <Map />
             </div>
             <div className="flex justify-center items-center">
-              <div className="text-center lg:text-left">
-                <div className="text-center md:text-left">
+              <div className="text-center lg:text-left space-y-4">
+                <div className="text-center md:text-left space-y-2">
                   <h1 className="font-extrabold lg:text-[32px] max-w-[450px] mx-auto text-xl leading-none lg:leading-[2.4rem] mb-2">
                     Visit
                     <span className="font-extrabold lg:text-[32px] text-xl text-primary">
