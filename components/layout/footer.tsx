@@ -24,20 +24,7 @@ export default function Footer() {
           </div>
 
           <div className="col-span-1 lg:col-span-6 px-0 lg:px-5 mt-5">
-            <div className="grid grid-cols-2 gap-4 mx-auto">
-              <div>
-                <h1 className="text-sm font-medium">NAVIGATION</h1>
-                <ul className="max-w-lg mt-3 space-y-3 text-sm text-left list-none list-inside">
-                  {navRoutes.map((route) => (
-                    <li key={route.href}>
-                      <Link href={route.href}>
-                        <span className="hover:underline">{route.title}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
+            <div className="grid grid-cols-2 gap-16 mx-auto">
               <div>
                 <h1 className="text-sm font-medium">REACH US</h1>
                 <ul className="max-w-lg mt-3 space-y-3 text-sm text-left list-none list-inside">
@@ -59,6 +46,19 @@ export default function Footer() {
                       <p>kingsurfbeach@gmail.com</p>
                     </Link>
                   </li>
+                </ul>
+              </div>
+
+              <div>
+                <h1 className="text-sm font-medium">NAVIGATION</h1>
+                <ul className="max-w-lg mt-3 space-y-3 text-sm text-left list-none list-inside">
+                  {navRoutes.map((route) => (
+                    <li key={route.href}>
+                      <Link href={route.href}>
+                        <span className="hover:underline">{route.title}</span>
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

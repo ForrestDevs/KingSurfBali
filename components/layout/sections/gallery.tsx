@@ -17,53 +17,53 @@ export default function GallerySection() {
             >
               <path
                 d="M2 1.5H61"
-                stroke="#EBBC6C"
-                stroke-width="3"
-                stroke-linecap="round"
+                className="stroke-primary"
+                strokeWidth="3"
+                strokeLinecap="round"
               ></path>
             </svg>
-            <h2 className="font-extrabold text-[24px] poppins max-w-[17rem]">
-              Sweet{" "}
-              <span className="text-[#EBBC6C] font-extrabold text-[24px] poppins">
+            <h2 className="font-extrabold text-xl">
+              King Surf Vibes{" "}
+              <span className="text-primary font-extrabold text-xl">
                 Gallery{" "}
               </span>
             </h2>
           </div>
         </div>
       </section>
-      <div className="grid grid-cols-4 gap-2 px-20 mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 px-4 sm:px-8 lg:px-20 mx-auto">
         <Image
-          className="w-full h-full object-cover"
+          className="w-full h-64 sm:h-full object-cover"
           src="https://selatarsurflessonbali.com/storage/app/media/IMG_5923.jpg"
           alt="https://selatarsurflessonbali.com/storage/app/media/IMG_5923.jpg"
           width={500}
           height={500}
         />
-        <div className="col-span-2">
+        <div className="sm:col-span-2">
           <div className="grid grid-cols-2 gap-2">
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-40 sm:h-full object-cover"
               src="https://selatarsurflessonbali.com/storage/app/media/IMG_6039.jpg"
               alt="https://selatarsurflessonbali.com/storage/app/media/IMG_6039.jpg"
               width={500}
               height={500}
             />
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-40 sm:h-full object-cover"
               src="https://selatarsurflessonbali.com/storage/app/media/IMG_6085.jpg"
               alt="https://selatarsurflessonbali.com/storage/app/media/IMG_6085.jpg"
               width={500}
               height={500}
             />
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-40 sm:h-full object-cover"
               src="https://selatarsurflessonbali.com/storage/app/media/IMG_6091.jpg"
               alt="https://selatarsurflessonbali.com/storage/app/media/IMG_6091.jpg"
               width={500}
               height={500}
             />
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-40 sm:h-full object-cover"
               src="https://selatarsurflessonbali.com/storage/app/media/IMG_5944.jpg"
               alt="https://selatarsurflessonbali.com/storage/app/media/IMG_5944.jpg"
               width={500}
@@ -72,7 +72,7 @@ export default function GallerySection() {
           </div>
         </div>
         <Image
-          className="w-full h-full object-cover"
+          className="w-full h-64 sm:h-full object-cover"
           src="https://selatarsurflessonbali.com/storage/app/media/IMG_6065.jpg"
           alt="https://selatarsurflessonbali.com/storage/app/media/IMG_6065.jpg"
           width={500}

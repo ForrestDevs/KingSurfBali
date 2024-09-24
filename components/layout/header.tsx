@@ -51,7 +51,7 @@ export default function Header() {
             className="font-bold text-lg flex items-center justify-start"
           >
             <Logo />
-            <h1 className="font-bold text-lg uppercase">King Surf Bali</h1>
+            <h1 className="font-bold text-lg uppercase whitespace-nowrap">King Surf Bali</h1>
           </Link>
         </div>
 

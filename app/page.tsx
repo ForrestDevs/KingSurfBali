@@ -38,13 +38,13 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
+    <main>
       <HeroSection />
       <LessonsSection />
       <RentalSection />
       <TestimonialSection />
       <CallToActionTwo />
       <FAQSection />
-    </>
+    </main>
   );
 }

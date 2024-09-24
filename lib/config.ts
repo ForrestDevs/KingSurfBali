@@ -8,7 +8,7 @@ export const navRoutes = [
     href: "/services",
   },
   {
-    title: "About",
+    title: "About Us",
     href: "/about",
   },
   {
