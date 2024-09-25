@@ -7,13 +7,12 @@ import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Instagram from "@/components/layout/instagram";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
 import StorySection from "@/components/layout/sections/story";
+
+export const metadata = {
+  title: "King Surf Bali - About",
+  description: "King Surf Bali - About",
+};
 
 export default function About() {
   return (

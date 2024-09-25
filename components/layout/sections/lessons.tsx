@@ -7,14 +7,16 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const lessons = [
   {
     title: "GROUP INTERMEDIATE LESSON",
     image:
-      "https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dc6/106/64fdc6106e37b471200752.jpg",
+      "/pic4.webp",
     description:
       "Class included, equipment surfing, experience instructor, locker, 2 hours surfing. Discount available for multiple lessons.",
     price: "IDR 400.000/Person",
@@ -22,7 +24,7 @@ const lessons = [
   {
     title: "PRIVATE BEGINNER CLASS",
     image:
-      "https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dc6/2ed/64fdc62ed5ff2841388140.jpg",
+      "/pic2.jpg",
     description:
       "Enjoy a private surfing experience at an affordable price! Private surfing only 300K per session. Include mineral water, locker, and sun block",
     price: "IDR 300.000/Person",
@@ -30,7 +32,7 @@ const lessons = [
   {
     title: "SEMI PRIVATE",
     image:
-      "https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dca/902/64fdca9024912250346219.jpg",
+      "/pic3.jpg",
     description:
       "Equipment surf, experienced private 1 instructor for 2 students, 2 hours surf lessons, free mineral water, zinc, locker, suncream locker and feedback after surf. Discount available ...",
     price: "IDR 250.000/Person",
@@ -38,7 +40,7 @@ const lessons = [
   {
     title: "KIDS SURFING LESSONS",
     image:
-      "https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dca/a94/64fdcaa945e13380682806.jpg",
+      "/pic5.webp",
     description:
       "Equipment surfing, experienced instructor, locker, 2 hours surfing lessons. Discount available for multiple lessons.",
     price: "IDR 350.000/Person",
@@ -53,7 +55,7 @@ export default function LessonsSection() {
           <div className="flex items-center mb-4">
             <div className="w-16 h-0.5 bg-primary mr-4"></div>
             <h2 className="text-2xl font-bold">
-              OUR <span className="text-primary">LESSON</span>
+              OUR <span className="text-primary">LESSONS</span>
             </h2>
           </div>
           <p className="text-md text-black">
@@ -113,13 +115,16 @@ export default function LessonsSection() {
             </CardContent>
             <CardFooter className="p-4 flex justify-center items-center">
               {/* <p className="text-sm font-semibold">{lesson.price}</p> */}
-              <Button
-                variant="outline"
-                className="mr-2 font-bold group/arrow text-black"
+              <Link
+                href="https://wa.me/6282292947707"
+                className={cn(
+                  buttonVariants({ size: "lg", variant: "outline" }),
+                  "text-black group/arrow w-full sm:w-auto"
+                )}
               >
                 Book Now
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
-              </Button>
+              </Link>
             </CardFooter>
           </Card>
         ))}

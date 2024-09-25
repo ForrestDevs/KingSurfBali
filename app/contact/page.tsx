@@ -7,6 +7,11 @@ import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
+export const metadata = {
+  title: "King Surf Bali - Contact",
+  description: "King Surf Bali - Contact",
+};
+
 export default function Contact() {
   return (
     <div>

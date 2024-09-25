@@ -7,8 +7,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export default function RentalSection() {
   return (
@@ -50,7 +52,7 @@ export default function RentalSection() {
           <CardHeader>
             <Image
               className="w-full h-48 object-cover"
-              src="https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dcc/313/64fdcc3136852137121536.jpg"
+              src="/board1.webp"
               alt="1 Hour Board Rental"
               width={400}
               height={200}
@@ -66,13 +68,16 @@ export default function RentalSection() {
             </p>
           </CardContent>
           <CardFooter className="flex justify-center">
-            <Button
-              variant="outline"
-              className="mr-2 font-bold group/arrow text-black"
+            <Link
+              href="https://wa.me/6282292947707"
+              className={cn(
+                buttonVariants({ size: "lg", variant: "outline" }),
+                "text-black group/arrow w-full sm:w-auto"
+              )}
             >
               Book Now
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
-            </Button>
+            </Link>
           </CardFooter>
         </Card>
 
@@ -80,7 +85,7 @@ export default function RentalSection() {
           <CardHeader>
             <Image
               className="w-full h-48 object-cover"
-              src="https://selatarsurflessonbali.com/storage/app/uploads/public/64f/dcc/3ea/64fdcc3ead36a106946582.jpg"
+              src="/pic7.webp"
               alt="Rental Board"
               width={400}
               height={200}
@@ -96,13 +101,16 @@ export default function RentalSection() {
             </p>
           </CardContent>
           <CardFooter className="flex justify-center">
-            <Button
-              variant="outline"
-              className="mr-2 font-bold group/arrow text-black"
+            <Link
+              href="https://wa.me/6282292947707"
+              className={cn(
+                buttonVariants({ size: "lg", variant: "outline" }),
+                "text-black group/arrow w-full sm:w-auto"
+              )}
             >
               Book Now
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
-            </Button>
+            </Link>
           </CardFooter>
         </Card>
       </div>

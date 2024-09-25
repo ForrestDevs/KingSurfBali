@@ -34,8 +34,8 @@ export default function GallerySection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 px-4 sm:px-8 lg:px-20 mx-auto">
         <Image
           className="w-full h-64 sm:h-full object-cover"
-          src="https://selatarsurflessonbali.com/storage/app/media/IMG_5923.jpg"
-          alt="https://selatarsurflessonbali.com/storage/app/media/IMG_5923.jpg"
+          src="/pic1.jpg"
+          alt="surf_gallery"
           width={500}
           height={500}
         />
@@ -43,29 +43,29 @@ export default function GallerySection() {
           <div className="grid grid-cols-2 gap-2">
             <Image
               className="w-full h-40 sm:h-full object-cover"
-              src="https://selatarsurflessonbali.com/storage/app/media/IMG_6039.jpg"
-              alt="https://selatarsurflessonbali.com/storage/app/media/IMG_6039.jpg"
+              src="/pic5.webp"
+              alt="surf_gallery"
               width={500}
               height={500}
             />
             <Image
               className="w-full h-40 sm:h-full object-cover"
-              src="https://selatarsurflessonbali.com/storage/app/media/IMG_6085.jpg"
-              alt="https://selatarsurflessonbali.com/storage/app/media/IMG_6085.jpg"
+              src="/pic4.webp"
+              alt="surf_gallery"
               width={500}
               height={500}
             />
             <Image
               className="w-full h-40 sm:h-full object-cover"
-              src="https://selatarsurflessonbali.com/storage/app/media/IMG_6091.jpg"
-              alt="https://selatarsurflessonbali.com/storage/app/media/IMG_6091.jpg"
+              src="/pic6.webp"
+              alt="surf_gallery"
               width={500}
               height={500}
             />
             <Image
               className="w-full h-40 sm:h-full object-cover"
-              src="https://selatarsurflessonbali.com/storage/app/media/IMG_5944.jpg"
-              alt="https://selatarsurflessonbali.com/storage/app/media/IMG_5944.jpg"
+              src="/pic5.webp"
+              alt="surf_gallery"
               width={500}
               height={500}
             />
@@ -73,7 +73,7 @@ export default function GallerySection() {
         </div>
         <Image
           className="w-full h-64 sm:h-full object-cover"
-          src="https://selatarsurflessonbali.com/storage/app/media/IMG_6065.jpg"
+          src="/pic7.webp"
           alt="https://selatarsurflessonbali.com/storage/app/media/IMG_6065.jpg"
           width={500}
           height={500}

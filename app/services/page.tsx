@@ -8,6 +8,11 @@ import { buttonVariants } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Instagram from "@/components/layout/instagram";
 
+export const metadata = {
+  title: "King Surf Bali - Services",
+  description: "King Surf Bali - Services",
+};
+
 export default function Contact() {
   return (
     <div>
