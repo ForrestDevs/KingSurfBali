@@ -34,7 +34,7 @@ export default function GallerySection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 px-4 sm:px-8 lg:px-20 mx-auto">
         <Image
           className="w-full h-64 sm:h-full object-cover"
-          src="/pic1.jpg"
+          src="/pic11.webp"
           alt="surf_gallery"
           width={500}
           height={500}

@@ -24,7 +24,7 @@ const lessons = [
   {
     title: "PRIVATE BEGINNER CLASS",
     image:
-      "/pic2.jpg",
+      "/pic9.webp",
     description:
       "Enjoy a private surfing experience at an affordable price! Private surfing only 300K per session. Include mineral water, locker, and sun block",
     price: "IDR 300.000/Person",
@@ -32,7 +32,7 @@ const lessons = [
   {
     title: "SEMI PRIVATE",
     image:
-      "/pic3.jpg",
+      "/pic10.webp",
     description:
       "Equipment surf, experienced private 1 instructor for 2 students, 2 hours surf lessons, free mineral water, zinc, locker, suncream locker and feedback after surf. Discount available ...",
     price: "IDR 250.000/Person",
