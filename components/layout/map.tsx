@@ -1,18 +1,17 @@
-"use client";
-
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Map() {
   return (
-    <iframe
-      className="h-[200px] w-full rounded-md"
-      src={`https://www.google.com/maps/embed/v1/place?key=${process.env.MAPS_API_KEY}&q=place_id:ChIJYxirraBH0i0RVNCUFxxxR8o`}
-      width="600"
-      height="450"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
+    <Link href="https://maps.app.goo.gl/Yd7bi17ym19HzLBn6">
+      <Image
+        src="/location.png"
+        alt="King Surf Bali Location"
+        width={600}
+        height={200}
+        className="h-[200px] w-full rounded-md object-cover"
+      />
+    </Link>
   );
 }

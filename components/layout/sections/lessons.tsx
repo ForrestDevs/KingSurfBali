@@ -26,7 +26,7 @@ const lessons = [
     image:
       "/pic9.webp",
     description:
-      "Enjoy a private surfing experience at an affordable price! Private surfing only 300K per session. Include mineral water, locker, and sun block",
+      "Enjoy a private surfing experience at an affordable price! Private surfing session. Include mineral water, locker, and sun block",
     price: "IDR 300.000/Person",
   },
   {
@@ -34,7 +34,7 @@ const lessons = [
     image:
       "/pic10.webp",
     description:
-      "Equipment surf, experienced private 1 instructor for 2 students, 2 hours surf lessons, free mineral water, zinc, locker, suncream locker and feedback after surf. Discount available ...",
+      "Equipment surf, experienced private 1 instructor for 2 students, 2 hours surf lessons, free mineral water, zinc, locker, sunscrean and feedback after surf. Discount available ...",
     price: "IDR 250.000/Person",
   },
   {

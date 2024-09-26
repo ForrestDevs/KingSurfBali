@@ -31,8 +31,8 @@ export default function Footer() {
                   <li>
                     <Link href="https://www.google.com/maps/place/75W7+RPW+Legian,+Kabupaten+Badung,+Bali,+Indonesia">
                       <p>
-                        75W7+RPW Legian, Kabupaten Badung, Bali Badung, Bali,
-                        Indonesia
+                        In front of Sari beach hotel, Jl. Pantai Legian, Legian,
+                        Kec. Kuta, Kabupaten Badung, Bali 80361
                       </p>
                     </Link>
                   </li>

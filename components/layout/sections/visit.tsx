@@ -17,8 +17,9 @@ export default function VisitSection() {
             If there is further information you can visit our office at the link
             below.
           </p>
+
           <Link
-            href="https://g.co/kgs/hA7jzET"
+            href="https://maps.app.goo.gl/Yd7bi17ym19HzLBn6"
             className={cn(buttonVariants({ size: "lg" }), "text-black")}
           >
             Open Map
