@@ -8,8 +8,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "King Surf Bali - Home",
-  description: "King Surf Bali offers the best surf lessons and surf rentals in Legian Beach Bali.",
+  description:
+    "King Surf Bali offers the best surf lessons and surf rentals in Legian Beach Bali.",
   robots: "index, follow",
+  keywords:
+    "Kuta surf lessons, Kuta surf board rentals, surf, surf lessons, surf rentals, Bali, king surf bali, best surf rentals, best surf lessons bali, Kuta, Legian Beach",
 };
 
 export default function RootLayout({
