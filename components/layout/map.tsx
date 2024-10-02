@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Map() {
   return (
-    <Link href="https://maps.app.goo.gl/Yd7bi17ym19HzLBn6">
+    <Link href="https://maps.app.goo.gl/XDK2Lj8kQgSvvXdF8">
       <Image
         src="/location.png"
         alt="King Surf Bali Location"

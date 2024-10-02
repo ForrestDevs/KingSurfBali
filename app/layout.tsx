@@ -7,8 +7,9 @@ import Header from "@/components/layout/header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shadcn - Landing template",
-  description: "Landing template from Shadcn",
+  title: "King Surf Bali - Home",
+  description: "King Surf Bali offers the best surf lessons and surf rentals in Legian Beach Bali.",
+  robots: "index, follow",
 };
 
 export default function RootLayout({

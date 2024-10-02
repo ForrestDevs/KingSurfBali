@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://kingsurfbali.site/sitemap.xml',
+    sitemap: 'https://www.kingsurfbali.site/sitemap.xml',
   }
 }

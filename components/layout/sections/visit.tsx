@@ -19,7 +19,7 @@ export default function VisitSection() {
           </p>
 
           <Link
-            href="https://maps.app.goo.gl/Yd7bi17ym19HzLBn6"
+            href="https://maps.app.goo.gl/XDK2Lj8kQgSvvXdF8"
             className={cn(buttonVariants({ size: "lg" }), "text-black")}
           >
             Open Map

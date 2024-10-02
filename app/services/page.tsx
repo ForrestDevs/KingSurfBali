@@ -10,7 +10,7 @@ import Instagram from "@/components/layout/instagram";
 
 export const metadata = {
   title: "King Surf Bali - Services",
-  description: "King Surf Bali - Services",
+  description: "Our Services for the best surf lessons and surf rentals in Legian Beach Bali.",
 };
 
 export default function Contact() {

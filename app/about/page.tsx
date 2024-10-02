@@ -11,7 +11,7 @@ import StorySection from "@/components/layout/sections/story";
 
 export const metadata = {
   title: "King Surf Bali - About",
-  description: "King Surf Bali - About",
+  description: "Our Story about becoming the best surf school in Bali.",
 };
 
 export default function About() {

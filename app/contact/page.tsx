@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "King Surf Bali - Contact",
-  description: "King Surf Bali - Contact",
+  description: "Contact King Surf Bali for the best surf lessons and surf rentals in Legian Beach Bali.",
 };
 
 export default function Contact() {

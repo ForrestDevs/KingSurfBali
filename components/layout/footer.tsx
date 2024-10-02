@@ -29,11 +29,8 @@ export default function Footer() {
                 <h1 className="text-sm font-medium">REACH US</h1>
                 <ul className="max-w-lg mt-3 space-y-3 text-sm text-left list-none list-inside">
                   <li>
-                    <Link href="https://www.google.com/maps/place/75W7+RPW+Legian,+Kabupaten+Badung,+Bali,+Indonesia">
-                      <p>
-                        In front of Sari beach hotel, Jl. Pantai Legian, Legian,
-                        Kec. Kuta, Kabupaten Badung, Bali 80361
-                      </p>
+                    <Link href="https://maps.app.goo.gl/XDK2Lj8kQgSvvXdF8">
+                      Beach, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361
                     </Link>
                   </li>
                   <li className="text-sm">
