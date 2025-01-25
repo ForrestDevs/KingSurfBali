@@ -15,35 +15,31 @@ import Link from "next/link";
 const lessons = [
   {
     title: "GROUP INTERMEDIATE LESSON",
-    image:
-      "/pic4.webp",
+    image: "/pic4.webp",
     description:
       "Class included, equipment surfing, experience instructor, locker, 2 hours surfing. Discount available for multiple lessons.",
-    price: "IDR 400.000/Person",
+    price: "",
   },
   {
     title: "PRIVATE BEGINNER CLASS",
-    image:
-      "/pic9.webp",
+    image: "/pic9.webp",
     description:
       "Enjoy a private surfing experience at an affordable price! Private surfing session. Include mineral water, locker, and sun block",
-    price: "IDR 300.000/Person",
+    price: "IDR 350k/Person",
   },
   {
     title: "SEMI PRIVATE",
-    image:
-      "/pic10.webp",
+    image: "/pic10.webp",
     description:
       "Equipment surf, experienced private 1 instructor for 2 students, 2 hours surf lessons, free mineral water, zinc, locker, sunscrean and feedback after surf. Discount available ...",
-    price: "IDR 250.000/Person",
+    price: "IDR 250k/Person",
   },
   {
     title: "KIDS SURFING LESSONS",
-    image:
-      "/pic5.webp",
+    image: "/pic5.webp",
     description:
       "Equipment surfing, experienced instructor, locker, 2 hours surfing lessons. Discount available for multiple lessons.",
-    price: "IDR 350.000/Person",
+    price: "",
   },
 ];
 
@@ -69,21 +65,30 @@ export default function LessonsSection() {
         <div className="lg:max-w-md">
           <ul className="list-none space-y-2">
             <li className="flex flex-row items-start">
-              <ArrowRight className="text-primary mr-2 flex-shrink-0 mt-1" size={24} />
+              <ArrowRight
+                className="text-primary mr-2 flex-shrink-0 mt-1"
+                size={24}
+              />
               <span className="flex-grow">
                 Beginner Lessons: Learn the basics, from paddling to catching
                 your first wave.
               </span>
             </li>
             <li className="flex flex-row items-start">
-              <ArrowRight className="text-primary mr-2 flex-shrink-0 mt-1" size={24} />
+              <ArrowRight
+                className="text-primary mr-2 flex-shrink-0 mt-1"
+                size={24}
+              />
               <span className="flex-grow">
                 Intermediate Sessions: Hone your skills, improve your balance,
                 and ride bigger waves with confidence.
               </span>
             </li>
             <li className="flex flex-row items-start">
-              <ArrowRight className="text-primary mr-2 flex-shrink-0 mt-1" size={24} />
+              <ArrowRight
+                className="text-primary mr-2 flex-shrink-0 mt-1"
+                size={24}
+              />
               <span className="flex-grow">
                 Advanced Coaching: Fine-tune your maneuvers and take on
                 Bali&apos;s legendary surf spots.
@@ -113,8 +118,11 @@ export default function LessonsSection() {
                 {lesson.description}
               </p>
             </CardContent>
-            <CardFooter className="p-4 flex justify-center items-center">
+            <CardFooter className="p-4 flex justify-center items-center flex-col">
               {/* <p className="text-sm font-semibold">{lesson.price}</p> */}
+              <p className="text-lg font-semibold text-center mt-3 text-black">
+                {lesson.price}
+              </p>
               <Link
                 href="https://wa.me/6282292947707"
                 className={cn(
